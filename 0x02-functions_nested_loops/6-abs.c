@@ -11,9 +11,9 @@ int _abs(int n)
 	int cal[1];
 
 	if (n < 0)
-		cal[0] = n * -1;
+		n = n * -1;
 	else if (n >= 0)
-		cal[0] = n;
-	_putchar(cal[0]);
+		n = n;
+	_putchar(n);
 	return (0);
 }
