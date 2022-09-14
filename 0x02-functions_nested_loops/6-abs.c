@@ -12,7 +12,7 @@ int _abs(int n)
 
 	if (n < 0)
 		cal[0] = n * -1;
-	else if (value >= 0)
+	else if (n >= 0)
 		cal[0] = n;
 	_putchar(cal[0]);
 	return (0);
