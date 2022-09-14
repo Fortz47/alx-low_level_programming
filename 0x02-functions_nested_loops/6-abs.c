@@ -8,7 +8,7 @@
 
 int _abs(int value)
 {
-	int cal[];
+	int cal[1];
 
 	if (value < 0)
 		cal[0] = value * -1;
