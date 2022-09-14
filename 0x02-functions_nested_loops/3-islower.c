@@ -10,12 +10,12 @@
 int _islower(int c)
 {
 	char ch;
-	int yes = 0;
+	int yes = '0';
 
 	for (ch = 'a'; ch <= 'z'; ch++)
 	{
 		if (ch == c)
-			yes = 1;
+			yes = '1';
 	}
 	_putchar(yes);
 	return (0);
