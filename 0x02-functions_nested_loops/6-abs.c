@@ -2,7 +2,7 @@
 
 /**
  * _abs - entry point
- * @value: function parameter
+ * @n: function parameter
  * Return: 0 (success)
  */
 
