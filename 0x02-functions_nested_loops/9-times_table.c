@@ -5,7 +5,7 @@
  * @void: takes no argument
  * Return: void.
  */
- 
+
 void times_table(void)
 {
 	int i, n, mul;
