@@ -25,7 +25,7 @@ void times_table(void)
 				_putchar(32);
 				_putchar(mul + '0');
 			}
-			else if (mul >=10 && mul <= 81)
+			else if (mul >= 10 && mul <= 81)
 			{
 				_putchar(',');
 				_putchar(32);
