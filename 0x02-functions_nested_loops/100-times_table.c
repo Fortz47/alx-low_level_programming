@@ -21,11 +21,13 @@ void print_times_table(int n)
 			{
 				mul = i * j;
 				if (mul < 10)
+				{
 					_putchar(',');
 					_putchar(' ');
 					_putchar(' ');
 					_putchar(' ');
 					_putchar(mul + '0');
+				}
 				else if (mul >= 10 && mul < 100)
 				{
 					_putchar(',');
