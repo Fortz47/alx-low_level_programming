@@ -14,6 +14,7 @@ void print_to_98(int n)
 	{
 		putchar((n / 10) + '0');
 		putchar((n % 10) + '0');
+		putchar('\n');
 	}
 	else if (n < 0)
 	{
@@ -31,7 +32,7 @@ void print_to_98(int n)
 	{
 		k = n;
 
-		while (k > n && k != 98)
+		while (k > 98)
 		{
 			printf("%d, ", k);
 			k--;
