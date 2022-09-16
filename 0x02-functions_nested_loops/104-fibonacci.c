@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 /**
+ * main - entry point
  * description: prints the first 98 Fibonacci numbers,
  * starting with 1 and 2, followed by a new line.
  * Return: 0 (success)
@@ -17,7 +18,7 @@ int main(void)
 	{
 		j = j + k;
 		k = j - k;
-		printf("%lu", j);
+		printf(", %lu", j);
 		i++;
 	}
 	putchar('\n');
