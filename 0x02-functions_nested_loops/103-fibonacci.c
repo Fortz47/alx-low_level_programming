@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	int i, j, k, z;
+	unsigned int i, j, k, z;
 
 	i = 1;
 	j = 2;
@@ -20,5 +20,6 @@ int main(void)
 			z = z + j;
 		i++;
 	}
+	printf("%u\n", z); 
 	return (0);
 }
