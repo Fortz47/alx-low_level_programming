@@ -8,7 +8,7 @@
  */
 int main(void)
 {
-	unsigned int i, j, k;
+	long int i, j, k;
 
 	i = 3;
 	j = 2;
@@ -18,7 +18,7 @@ int main(void)
 	{
 		j = j + k;
 		k = j - k;
-		printf(", %u", j);
+		printf(", %d", j);
 		i++;
 	}
 	putchar('\n');
