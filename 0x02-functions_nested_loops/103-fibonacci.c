@@ -9,7 +9,7 @@ int main(void)
 	unsigned int i, j, k, z;
 
 	i = 1;
-	j = 2;
+	j = 1;
 	k = 1;
 	z = 0;
 	while (i > 0 && z <= 4000000)
@@ -20,6 +20,6 @@ int main(void)
 			z = z + j;
 		i++;
 	}
-	printf("%u\n", z); 
+	printf("%u\n", z);
 	return (0);
 }
