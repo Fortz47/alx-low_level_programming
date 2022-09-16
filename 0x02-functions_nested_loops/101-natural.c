@@ -17,11 +17,11 @@ int main(void)
 		if ((i % 3) == 0 || (i % 5) == 0)
 		{
 			j = j + i;
-			printf("%d ", i);
+/*			printf("%d ", i); */
 		}
 		i++;
 	}
-	putchar('\n');
+/*	putchar('\n'); */
 	printf("total sum is: %d\n", j);
 	return (0);
 }
