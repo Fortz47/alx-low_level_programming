@@ -18,7 +18,7 @@ int main(void)
 	{
 		j = j + k;
 		k = j - k;
-		printf(", %d", j);
+		printf(", %u", j);
 		i++;
 	}
 	putchar('\n');
