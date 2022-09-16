@@ -10,22 +10,20 @@ int main(void)
 {
 	unsigned long int i, j, k, j1, j2, k1, k2;
 
-	i = 3;
-	j = 2;
-	k = 1;
-	printf("1, 2");
-	while (i < 92)
+	j = 1;
+	k = 2;
+	printf("%lu", j);
+	for (i = 1; i < 91; i++)
 	{
-		j = j + k;
-		k = j - k;
-		printf(", %lu", j);
-		i++;
+		printf(", %lu", k);
+		k = k + j;
+		j = k - j;
 	}
 	j1 = j / 1000000000;
 	j2 = j % 1000000000;
 	k1 = k / 1000000000;
 	k2 = k % 1000000000;
-	
+
 	for (i = 92; i < 99; ++i)
 	{
 		printf(", %lu", k1 + (k2 / 1000000000));
