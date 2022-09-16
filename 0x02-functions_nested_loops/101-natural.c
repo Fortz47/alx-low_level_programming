@@ -22,6 +22,6 @@ int main(void)
 		i++;
 	}
 /*	putchar('\n'); */
-	printf("total sum is: %d\n", j);
+	printf("%d\n", j);
 	return (0);
 }
