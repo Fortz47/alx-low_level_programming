@@ -9,15 +9,16 @@ int main(void)
 {
 	int i;
 
-	puts("1 ");
-	for (i = 2; i <= 100; i++)
+	for (i = 1; i <= 100; i++)
 	{
 		if ((i % 15) == 0)
-			puts(" FizzBuzz");
+			printf(" FizzBuzz");
 		else if ((i % 3) == 0)
-			puts(" Fizz");
+			printf(" Fizz");
 		else if ((i % 5) == 0)
-			puts(" Buzz");
+			printf(" Buzz");
+		else if (i == 1)
+			printf("%d", i);
 		else
 			printf(" %d", i);
 	}
