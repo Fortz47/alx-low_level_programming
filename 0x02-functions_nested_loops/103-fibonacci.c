@@ -6,19 +6,20 @@
  */
 int main(void)
 {
-	int i, j, k, z;
+	unsigned int i, j, k, z;
 
 	i = 1;
-	j = 2;
+	j = 1;
 	k = 1;
 	z = 0;
 	while (i > 0 && z <= 4000000)
 	{
 		j = j + k;
-		k = j - k
+		k = j - k;
 		if ((j % 2) == 0)
 			z = z + j;
 		i++;
 	}
+	printf("%u\n", z);
 	return (0);
 }
