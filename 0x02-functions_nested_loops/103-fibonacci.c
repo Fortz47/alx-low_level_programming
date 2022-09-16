@@ -15,7 +15,7 @@ int main(void)
 	while (i > 0 && z <= 4000000)
 	{
 		j = j + k;
-		k = j - k
+		k = j - k;
 		if ((j % 2) == 0)
 			z = z + j;
 		i++;
