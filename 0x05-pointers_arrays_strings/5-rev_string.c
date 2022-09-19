@@ -5,7 +5,7 @@
  * @s: function parameter
  */
 
-void print_rev(char *s)
+void rev_string(char *s)
 {
 	char j, tmp;
 	int i, k, len;
