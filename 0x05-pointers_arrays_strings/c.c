@@ -2,9 +2,10 @@
 
 int main(void)
 {
-	int n = 60;
-	int *p = &n;
+	char *str;
 
-	printf("p is %d and %p\n", *p, p);
+	str = "hello there";
+	printf("%d\n", str);
+	printf("%c\n", str[1]);
 	return (0);
 }
