@@ -12,7 +12,7 @@ int _strlen(char *s)
 
 	len = 0;
 	i = 0;
-	int nullTerminator = '\0';
+	char nullTerminator = '\0';
 
 	while (s[i] != nullTerminator)
 	{
