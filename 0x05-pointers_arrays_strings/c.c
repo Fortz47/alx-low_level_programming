@@ -5,7 +5,13 @@ int main(void)
 	char *str;
 
 	str = "hello there";
-	printf("%d\n", str);
-	printf("%c\n", str[1]);
+	for (int i = 0; i < 15; i++)
+	{
+		putchar(str[i]);
+	}
+	putchar(32);
+	int i = 0;
+
+	while (
 	return (0);
 }
