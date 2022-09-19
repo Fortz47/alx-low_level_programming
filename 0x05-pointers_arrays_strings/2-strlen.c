@@ -9,7 +9,7 @@
 int _strlen(char *s)
 {
 	int i, len;
-	char nullTerminator; 
+	char nullTerminator;
 
 	len = 0;
 	i = 0;
