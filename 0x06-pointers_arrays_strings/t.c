@@ -4,9 +4,8 @@
 int main(void)
 {
 	char *s1 = "ello";
-	char *s2 = "orld!";
+	long int s2[4] = {1, 2, 30};
 
-	int res = strcmp(s1, s2);
-	printf("%d\n%d\n", ('c' - 'C'), res);
+	printf("s1: %ld\ns2: %ld\nsizeof(int): %d\n", sizeof(s1), sizeof(s2), sizeof(int));
 	return 0;
 }
