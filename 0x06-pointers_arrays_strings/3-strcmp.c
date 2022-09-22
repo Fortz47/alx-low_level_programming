@@ -17,15 +17,15 @@ int _strcmp(char *s1, char *s2)
 		if (s1[i] == s2[i])
 			j = 0;
 		else if (s1[i] > s2[i])
-			j = 15;
+			j = s1[i] - s2[i];
 		else if (s1[i] < s2[i])
-			j = -15;
+			j = s1[i] - s2[i];
 
-		if (j == 15 || j == -15)
+		if (j < 0 || j > 0)
 			break;
 		i++;
 
 	} while (s1[i] != '\0' || s2[i] != '\0');
-	
+
 	return (j);
 }
