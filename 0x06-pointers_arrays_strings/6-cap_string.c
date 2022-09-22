@@ -8,7 +8,7 @@
 
 char *cap_string(char *s)
 {
-	int i, j, k;
+	int i, k;
 
 	int separator[14] = {9, 32, 10, 44, 59, 46, 33, 63, 34, 40, 41, 123, 125};
 
