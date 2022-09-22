@@ -4,6 +4,7 @@
  * print_number - prints a number
  * @n: number to print
  */
+
 void print_number(int n)
 {
 	if ((n >= 0 && n <= 9) || (n < 0 && n >= -9))
@@ -44,6 +45,19 @@ void print_number(int n)
 			n = n * -1;
 		}
 		_putchar((n / 1000) + '0');
+		_putchar(((n % 1000) / 100) + '0');
+		_putchar(((n % 100) / 10) + '0');
+		_putchar((n % 10) + '0');
+	}
+	else if ((n >= 10000 && n <= 99999) || (n <= -10000 && n >= -99999))
+	{
+		if (n < 0)
+		{
+			_putchar(45);
+			n = n * -1;
+		}
+		_putchar((n / 10000) + '0');
+		_putchar(((n % 10000) / 1000) + '0');
 		_putchar(((n % 1000) / 100) + '0');
 		_putchar(((n % 100) / 10) + '0');
 		_putchar((n % 10) + '0');
