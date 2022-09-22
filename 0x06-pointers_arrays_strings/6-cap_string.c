@@ -19,22 +19,12 @@ char *cap_string(char *s)
 		if (i == 0 && s[i] >= 97 && s[i] <= 122)
 			s[i] = s[i] - 32;
 
-		for (k = 0; k < 14; k++)
+		for (k = 0; k < 13; k++)
 		{
 			if (s[i] == separator[k])
 			{
-				for (j = i + 1;; j++)
-				{
-					if (s[j] >= 97 && s[j] <= 122)
-					{
-						s[j] = s[j] - 32;
-						break;
-					}
-					else if (s[j] >= 65 && s[j] <= 90)
-						break;
-					else if (s[j] >= 48 && s[j] <= 57)
-						break;
-				}
+				if (s[i + 1] >= 97 && s[i + 1] <= 122)
+					s[i + 1] -= 32;
 			}
 		}
 		i++;
