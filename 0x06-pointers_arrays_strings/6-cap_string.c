@@ -18,7 +18,7 @@ char *cap_string(char *s)
 	{
 		if (i == 0 && s[i] >= 97 && s[i] <= 122)
 			s[i] = s[i] - 32;
-		
+
 		for (k = 0; k < 14; k++)
 		{
 			if (s[i] == separator[k])
