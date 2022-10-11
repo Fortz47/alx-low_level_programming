@@ -9,19 +9,12 @@
 
 void print_dog(struct dog *d)
 {
-	int i;
-
-	char dog[4] = {"name", "age", "owner"};
-	char _dog[4] = {"Name", "Age", "Owner"};
-
 	if (d == NULL)
 		return;
+	if (d->name == NULL)
+		d->name = "(nil)";
+	if (d->owner == NULL)
+		d->owner = "(nil)";
 
-	for (i = 0; i < 3; i++)
-	{
-		if (d->dog[i] == NULL)
-			printf("%s: nil\n", _dog[i]);
-		else
-			printf("%s: %s\n", _dog[i], d->dog[i]);
-	}
+	printf("Name: %s\nAge: %f\nOwner: %s\n", d->name, d->age, d->owner);
 }
