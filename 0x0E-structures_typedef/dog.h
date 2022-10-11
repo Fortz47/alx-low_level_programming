@@ -18,6 +18,6 @@ struct dog
 /**
  * mydog - typedef for struct dog
  */
-typedef struct dog dog;
+typedef struct dog mydog;
 
 #endif
