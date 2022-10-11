@@ -15,7 +15,7 @@ void print_dog(struct dog *d)
 	char _dog[4] = {"Name", "Age", "Owner"};
 
 	if (d == NULL)
-		return (0);
+		return;
 
 	for (i = 0; i < 3; i++)
 	{
