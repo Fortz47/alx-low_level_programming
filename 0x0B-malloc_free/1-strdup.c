@@ -39,8 +39,10 @@ char *_strdup(char *str)
 	if (p == NULL)
 		return (NULL);
 
-	for (i = 0; i < lenght; i++)
-		p[i] = str[i];
+	i = 0;
+
+	while ((p[i] = str[i]) != '\0')
+		i++;
 
 	return (p);
 }
