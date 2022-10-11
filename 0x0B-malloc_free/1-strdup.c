@@ -14,7 +14,7 @@ int _strlen(char *string)
 
 	for (i = 0; string[i] != '\0'; i++)
 		continue;
-	return (i);
+	return (i + 1);
 }
 
 /**
@@ -29,20 +29,20 @@ char *_strdup(char *str)
 	char *p;
 	int i;
 
+	int lenght = _strlen(str);
+
 	if (str == NULL)
 		return (NULL);
-
-	int lenght = _strlen(str);
 
 	p = malloc(sizeof(*p) * lenght);
 
 	if (p == NULL)
 		return (NULL);
 
-	for (i = 0; i < lenght; i++)
-		p[i] = str[i];
+	i = 0;
 
-	p[i] = '\0';
+	while ((p[i] = str[i]) != '\0')
+		i++;
 
 	return (p);
 }
