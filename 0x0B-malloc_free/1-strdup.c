@@ -27,11 +27,11 @@ char *_strdup(char *str)
 {
 	char *p;
 	int i;
+	
+	int lenght = _strlen(str);
 
 	if (str == NULL)
 		return (NULL);
-
-	int lenght = _strlen(str);
 
 	p = malloc(sizeof(*p) * lenght);
 
