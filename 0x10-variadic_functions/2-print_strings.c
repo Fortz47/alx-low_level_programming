@@ -29,7 +29,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		{
 			printf("%s", string);
 		}
-		else 
+		else
 			printf("%s%s", separator, string);
 	}
 	va_end(list);
