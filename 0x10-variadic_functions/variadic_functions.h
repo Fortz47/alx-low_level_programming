@@ -2,7 +2,6 @@
 #define VARIADIC_FUNCTIONS_H
 
 #include <stdarg.h>
-#include <stddef.h>
 
 int _putchar(char c);
 void print_all(const char * const format, ...);
