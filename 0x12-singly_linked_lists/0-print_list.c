@@ -9,10 +9,12 @@
 
 size_t print_list(const list_t *h)
 {
-	size_t count = 0;
+	size_t count;
 	const list_t *ptr;
 
 	ptr = h;
+	count = 0;
+
 	while (ptr)
 	{
 		count++;
