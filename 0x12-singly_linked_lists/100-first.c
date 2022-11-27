@@ -1,12 +1,12 @@
 #include <stdio.h>
 
 /**
- * first - prints a string before the main function
+ * b - prints a string before the main function
  * is executed
  */
 
-void first(void) __attribute__ ((constructor));
-void first(void)
+void b(void) __attribute__ ((constructor))
+void b(void)
 {
 	printf("You're beat! and yet, you must allow,\n");
 	printf("I bore my house upon my back!\n");
