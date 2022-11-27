@@ -5,7 +5,7 @@
  * is executed
  */
 
-void b(void) __attribute__ ((constructor))
+void b(void) __attribute__ ((constructor));
 void b(void)
 {
 	printf("You're beat! and yet, you must allow,\n");
