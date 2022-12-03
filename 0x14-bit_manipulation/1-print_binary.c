@@ -15,7 +15,7 @@ void print_binary(unsigned long int n)
 		return;
 	}
 
-	k = sizeof(n) * 8 - 1;
+	k = 63;
 
 	for (i = 1 << k; i > 0; i = i >> 1)
 	{
