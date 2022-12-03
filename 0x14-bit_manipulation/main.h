@@ -1,6 +1,10 @@
 #ifndef MAIN_H
 #define MAIN_H
 
+#include <unistd.h>
+
+int _putchar(char c);
+
 int clear_bit(unsigned long int *n, unsigned int index);
 int set_bit(unsigned long int *n, unsigned int index);
 int get_bit(unsigned long int n, unsigned int index);
