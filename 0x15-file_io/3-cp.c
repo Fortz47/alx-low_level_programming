@@ -29,6 +29,12 @@ int main(int ac, char **av)
 	o_2 = open(av[2], O_CREAT | O_WRONLY | O_TRUNC, 0644);
 
 	buffer = malloc(sizeof(char) * 1024);
+	if (buffer == NULL)
+	{
+		dprintf(2, "Error: Can't write to %s\n", av[2]);
+		exit(99);
+	}
+		
 	r_1 = read(o_1, buffer, 1024);
 	if (r_1 == -1)
 	{
