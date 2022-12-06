@@ -26,7 +26,7 @@ int main(int ac, char **av)
 	}
 
 	o_1 = open(av[1], O_RDONLY);
-	o_2 = open(av[2], O_CREAT | O_WRONLY | O_TRUNC);
+	o_2 = open(av[2], O_CREAT | O_WRONLY | O_TRUNC, 0644);
 
 	buffer = malloc(sizeof(char) * 1024);
 	r_1 = read(o_1, buffer, 1024);
