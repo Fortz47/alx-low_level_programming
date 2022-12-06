@@ -50,7 +50,6 @@ int main(int ac, char **av)
 			free(buffer);
 			exit(99);
 		}
-		free(buffer);
 		r_1 = read(o_1, buffer, 1024);
 	}
 	c_1 = close(o_1);
@@ -66,5 +65,6 @@ int main(int ac, char **av)
 		dprintf(2, "Error: Can't close fd %i\n", o_2);
 		exit(100);
 	}
+	free(buffer);
 	return (0);
 }
