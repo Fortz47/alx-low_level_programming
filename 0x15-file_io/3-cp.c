@@ -51,6 +51,7 @@ int main(int ac, char **av)
 			exit(99);
 		}
 		r_1 = read(o_1, buffer, 1024);
+		o_2 = open(av[2], O_WRONLY | O_APPEND);
 	}
 	c_1 = close(o_1);
 	if (c_1 == -1)
