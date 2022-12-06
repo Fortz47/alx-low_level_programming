@@ -14,13 +14,13 @@ int create_file(const char *filename, char *text_content)
 
 	if (filename == NULL)
 		return (-1);
-	if (text != NULL)
+	if (text_content != NULL)
 	{
 		while (text_content[i] != '\0')
 			i++;
 	}
 
-	fd_open = open("filename", O_CREAT | O_RDWR | O_TRUNC, 600);
+	fd_open = open(filename, O_CREAT | O_RDWR | O_TRUNC, 600);
 	fd_write = write(fd_open, text_content, i);
 
 	if (fd_open == -1 || fd_write == -1)
