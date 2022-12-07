@@ -15,13 +15,13 @@ int main(int ac, char **av)
 
 	if (ac != 3)
 	{
-		dprintf(2, "Usage: %s file_from file_to\n", av[0]);
+		dprintf(STDERR_FILENO, "Usage: %s file_from file_to\n", av[0]);
 		exit(97);
 	}
 
 	if (av[1] == NULL)
 	{
-		dprintf(2, "Error: Can't read from file %s\n", av[1]);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", av[1]);
 		exit(98);
 	}
 
@@ -31,14 +31,14 @@ int main(int ac, char **av)
 	buffer = malloc(sizeof(char) * 1024);
 	if (buffer == NULL)
 	{
-		dprintf(2, "Error: Can't write to %s\n", av[2]);
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", av[2]);
 		exit(99);
 	}
 
 	r_1 = read(o_1, buffer, 1024);
 	if (r_1 == -1)
 	{
-		dprintf(2, "Can't read from file %s\n", av[1]);
+		dprintf(STDERR_FILENO, "Can't read from file %s\n", av[1]);
 		exit(98);
 	}
 	while (r_1 >= 1)
@@ -46,7 +46,7 @@ int main(int ac, char **av)
 		w_2 = write(o_2, buffer, r_1);
 		if (w_2 == -1 || w_2 != r_1)
 		{
-			dprintf(2, "Error: Can't write to %s\n", av[2]);
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", av[2]);
 			free(buffer);
 			exit(99);
 		}
@@ -56,14 +56,14 @@ int main(int ac, char **av)
 	c_1 = close(o_1);
 	if (c_1 == -1)
 	{
-		dprintf(2, "Error: Can't close fd %i\n", o_1);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %i\n", o_1);
 		exit(100);
 	}
 
 	c_2 = close(o_2);
 	if (c_2 == -1)
 	{
-		dprintf(2, "Error: Can't close fd %i\n", o_2);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %i\n", o_2);
 		exit(100);
 	}
 	free(buffer);
