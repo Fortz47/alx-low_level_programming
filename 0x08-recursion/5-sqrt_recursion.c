@@ -12,12 +12,14 @@
 
 int _sqrt_recursive_helper(int n, int start, int end)
 {
+    int mid, square;
+
     if (start > end) {
         return end;
     }
 
-    int mid = start + (end - start) / 2;
-    int square = mid * mid;
+    mid = start + (end - start) / 2;
+    square = mid * mid;
 
     if (square == n) {
         return mid;
