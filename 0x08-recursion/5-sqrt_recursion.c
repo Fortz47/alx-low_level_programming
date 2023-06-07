@@ -30,7 +30,7 @@ int _sqrt_recursive_helper(int n, int start, int end)
     }
 }
 
-int _sqrt_recursive(int n)
+int _sqrt_recursion(int n)
 {
     if (n < 0)
         return -1;
