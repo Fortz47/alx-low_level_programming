@@ -13,6 +13,7 @@ int _sqrt_recursion(int n);
 int _sqrt_recursive_helper(int n, int start, int end);
 int is_prime_number(int n);
 int is_palindrome(char *s);
+int is_palindrome_recursive(char *s, int start, int end);
 int wildcmp(char *s1, char *s2);
 
 #endif
