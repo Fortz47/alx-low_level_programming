@@ -1,6 +1,22 @@
 #include "main.h"
 
 /**
+ * _strlen - cal lenght of a string
+ * @str: string
+ *
+ * Return: lenght of string
+ *
+ */
+
+int _strlen(char *str)
+{
+	int i = 0;
+
+	while (str[i])
+		i++;
+	return (i);
+}
+/**
  * str_concat - concatenates two strings
  * @s1: string 1
  * @s2: string 2
@@ -20,7 +36,7 @@ char *str_concat(char *s1, char *s2)
 	if (s2 == NULL)
 		s2 = "";
 
-	arr = malloc(sizeof(s1) + sizeof(s2));
+	arr = malloc(_strlen(s1) + _strlen(s2) + 1);
 	if (arr == NULL)
 		return (NULL);
 	i = 0;
