@@ -50,8 +50,8 @@ char **strtow(char *str)
 	char **newStr;
 	int i, j, word_count, word_index;
 
-	if (str == NULL || str[0] == '\0' || str == " ")
-	return (NULL);
+	if (str == NULL || str[0] == '\0' || str == "")
+		return (NULL);
 
 	word_count = 0;
 	i = 0;
@@ -90,7 +90,7 @@ char **strtow(char *str)
 		newStr[word_index++] = word;
 
 		while (str[i] != ' ' && str[i] != '\0')
-		i++;
+			i++;
 		}
 		else
 			i++;
