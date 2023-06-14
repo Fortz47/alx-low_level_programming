@@ -58,6 +58,7 @@ char *argstostr(int ac, char **av)
 	int i, Tlenght;
 	char *newStr;
 
+	Tlenght = 0;
 	if (ac == 0 || !av)
 		return (NULL);
 
