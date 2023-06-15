@@ -20,7 +20,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (!ptr)
 		return (NULL);
 
-	byte_ptr = (unsigned int *)ptr;
+	byte_ptr = (unsigned int *) ptr;
 	for (i = 0; i < nmemb; i++)
 		byte_ptr[i] = 0;
 
