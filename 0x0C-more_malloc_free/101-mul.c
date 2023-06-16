@@ -9,44 +9,6 @@
  * @num2: Second positive number as a string.
  */
 
-void multiply_numbers(const char *num1, const char *num2);
-
-/**
- * is_positive_number - Check if a string represents a positive number.
- * @num: String to be checked.
- *
- * Return: 1 if the string represents a positive number, 0 otherwise.
- */
-
-int is_positive_number(const char *num);
-
-/**
- * main - entry point
- * @argc: cmd line argument count
- * @argv: array of cmd line arguments
- *
- * Return: 0, success
- */
-
-int main(int argc, char *argv[])
-{
-	if (argc != 3)
-	{
-		printf("Error\n");
-		return (98);
-	}
-
-	if (!is_positive_number(argv[1]) || !is_positive_number(argv[2]))
-	{
-		printf("Error\n");
-		return (98);
-	}
-
-	multiply_numbers(argv[1], argv[2]);
-
-	return (0);
-}
-
 void multiply_numbers(const char *num1, const char *num2)
 {
 	int i, start, j, digit1, digit2, product, pos1;
@@ -90,6 +52,13 @@ void multiply_numbers(const char *num1, const char *num2)
 	free(result);
 }
 
+/**
+ * is_positive_number - Check if a string represents a positive number.
+ * @num: String to be checked.
+ *
+ * Return: 1 if the string represents a positive number, 0 otherwise.
+ */
+
 int is_positive_number(const char *num)
 {
 	int i;
@@ -102,3 +71,29 @@ int is_positive_number(const char *num)
 	return (1);
 }
 
+/**
+ * main - entry point
+ * @argc: cmd line argument count
+ * @argv: array of cmd line arguments
+ *
+ * Return: 0, success
+ */
+
+int main(int argc, char *argv[])
+{
+	if (argc != 3)
+	{
+		printf("Error\n");
+		return (98);
+	}
+
+	if (!is_positive_number(argv[1]) || !is_positive_number(argv[2]))
+	{
+		printf("Error\n");
+		return (98);
+	}
+
+	multiply_numbers(argv[1], argv[2]);
+
+	return (0);
+}
