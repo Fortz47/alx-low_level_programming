@@ -19,13 +19,13 @@ struct dog
 };
 
 /**
- * typedef struct dog_t - define a struct called dog_t
+ * struct newDog - define a struct called dog_t
  * @name: name
  * @age: age
  * @owner: owner
  */
 
-typedef struct
+typedef struct newDog
 {
 	char *name;
 	float age;
