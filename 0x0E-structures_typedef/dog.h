@@ -19,7 +19,7 @@ struct dog
 };
 
 /**
- * struct dog_t - define a struct called dog_t
+ * dog_t - define a struct called dog_t
  * @name: name
  * @age: age
  * @owner: owner
