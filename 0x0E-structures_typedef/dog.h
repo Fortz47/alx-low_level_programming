@@ -18,6 +18,13 @@ struct dog
 	char *owner;
 };
 
+/**
+ * struct - define a struct called dog_t
+ * @name: name
+ * @age: age
+ * @owner: owner
+ */
+
 typedef struct
 {
 	char *name;
