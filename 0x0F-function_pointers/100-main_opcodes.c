@@ -1,6 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/**
+ * main - Entry point
+ * @argc: arg count
+ * @argv: array of cmdline arg
+ *
+ * Return: O, success
+ */
+
 int main(int argc, char *argv[])
 {
 	int i;
