@@ -6,8 +6,6 @@
 *
 * Return: no return.
 */
-
-
 void print_all(const char * const format, ...)
 {
 va_list valist;
@@ -47,11 +45,8 @@ break;
 }
 printf("%s", str);
 break;
-} 
-
+}
 i++;
 }
-
 printf("\n"), va_end(valist);
 }
-
