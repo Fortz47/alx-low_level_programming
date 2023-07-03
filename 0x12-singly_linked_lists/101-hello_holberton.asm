@@ -22,3 +22,5 @@ main:
     mov rax, 60         ; syscall number for exit
     syscall             ; Invoke syscall to exit
 
+section .bss
+    ; Define any uninitialized variables (if needed) in the BSS section
