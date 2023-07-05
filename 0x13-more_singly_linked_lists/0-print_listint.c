@@ -7,9 +7,9 @@
  * Return: number of nodes
  *
  */
-size_t print_listint(const list_tint *h)
+size_t print_listint(const listint_t *h)
 {
-	list_tint const *ptr;
+	listint_t const *ptr;
 	unsigned int count;
 
 	count = 0;
