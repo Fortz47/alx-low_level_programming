@@ -14,15 +14,15 @@ listint_t *reverse_listint(listint_t **head)
 
 	while (current != NULL)
 	{
-		next = current->next;  /* Store the next node */
+		next = current->next;
 
-		current->next = prev;  /* Reverse the link of the current node */
+		current->next = prev;
 
-		prev = current;  /* Move prev and current pointers one step forward */
+		prev = current;
 		current = next;
 	}
 
-	*head = prev;  /* Update the head to the last node (previously the tail) */
+	*head = prev;
 
 	return (*head);
 }
