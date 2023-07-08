@@ -11,8 +11,10 @@
 int set_bit(unsigned long int *n, unsigned int index)
 {
 	int i = (int) index;
-	unsigned int bit = 1;
+	unsigned long int bit = 1;
 
+	if (!n)
+		return (-1);
 	while (i >= 0)
 	{
 		if (i == 0)
