@@ -33,15 +33,12 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		close(fd);
 		return (0);
 	}
-	if (letters)
+	write_fd = write(1, buf, read_fd);
+	if (write_fd == -1 || write_fd != read_fd)
 	{
-		write_fd = write(1, buf, read_fd);
-		if (write_fd == -1 || write_fd != read_fd)
-		{
-			free(buf);
-			close(fd);
-			return (0);
-		}
+		free(buf);
+		close(fd);
+		return (0);
 	}
 	close(fd);
 	free(buf);
