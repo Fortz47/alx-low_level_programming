@@ -22,9 +22,10 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 			*head = NULL;
 			return (1);
 		}
-		*head = (*head)->next;
+		ptr = (*head)->next;
 		ptr->next->prev = NULL;
-		free(ptr);
+		free(*head);
+		*head = ptr;
 		return (1);
 	}
 	while (ptr)
