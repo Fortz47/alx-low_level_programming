@@ -1,10 +1,10 @@
 CC = gcc
-SRC = main.c school.c
+SRC = school.c main.c
 
 all: school
 
 school: $(SRC)
-	$(CC) $(SRC) -o school
+	$(CC) -o $@ $^
 
 clean:
 	rm -f school
